@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Kamin Jittapassorn's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="images/icon.png" />
+    <style>
+      .fade-in-text {
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Landing Page -->
+    <section id="landing" class="section">
+      <div
+        class="background"
+        style="background-image: url('images/landing-bg.jpg')"
+      ></div>
+        <h1>Hi, I'm Kamin Jittapassorn</h1>
+      </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="section">
+      <div class="background" style="background-color: Tomato"></div>
+      <div class="content fade-in-text">
+        <h2>About Me</h2>
+        <p>
+          I'm a 20-year-old undergraduate student passionate about technology
+          and innovation. I love working with computers, whether it's coding,
+          troubleshooting, or exploring new software. My journey in the tech
+          world is both exciting and fulfilling.
+        </p>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section">
+      <div class="background" style="background-color: Violet"></div>
+      <div class="content fade-in-text">
+        <h2>Education</h2>
+        <p>
+          2nd year Undergraduate <br />
+          Computer engineer at KMUTT <br /><br />
+          High school diploma <br />
+          St. Francis Xavier School<br />
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="background" style="background-color: rgb(106, 90, 205)"></div>
+      <div class="content fade-in-text">
+        <h2>Skills</h2>
+        <p>
+          Python Programming: Competent <br />C Programming: Competent
+          <br />Prompting AI: Competent <br />Linux: Advanced Beginner <br />Web
+          Development: Beginner
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div
+        class="background"
+        style="background-image: url('images/contact-bg.jpg')"
+      ></div>
+      <div class="content fade-in-text">
+        <h2>Contacts</h2>
+        <p>
+          📧
+          <a href="mailto:kamin.jitt@mail.kmutt.ac.th"
+            >kamin.jitt@mail.kmutt.ac.th</a
+          >
+          <br />📧
+          <a href="mailto:kaminjittapassorn@gmail.com"
+            >kaminjittapassorn@gmail.com</a
+          >
+          <br />📱 <a href="tel:096-007-1292">096-007-1292</a> <br />🌐
+          <a href="https://github.com/PEEMAI2004/">GitHub@PEEMAI2004</a>
+          <br />🌐 <a href="https://kaminjitt.com/">kaminjitt.com</a>
+        </p>
+      </div>
+    </section>
+
+    <script src="js/script.js"></script>
+    <script>
+      // Fade in text when scrolling down
+      window.addEventListener('scroll', function() {
+        const textElements = document.querySelectorAll('.fade-in-text');
+        textElements.forEach(element => {
+          const elementTop = element.getBoundingClientRect().top;
+          const windowHeight = window.innerHeight;
+          if (elementTop < windowHeight) {
+            element.style.opacity = 1;
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -105,18 +105,5 @@
     </div>
 
     <script src="js/script.js"></script>
-    <script>
-      // Fade in text when scrolling down
-      window.addEventListener('scroll', function() {
-        const textElements = document.querySelectorAll('.fade-in-text');
-        textElements.forEach(element => {
-          const elementTop = element.getBoundingClientRect().top;
-          const windowHeight = window.innerHeight;
-          if (elementTop < windowHeight) {
-            element.style.opacity = 1;
-          }
-        });
-      });
-    </script>
   </body>
 </html>

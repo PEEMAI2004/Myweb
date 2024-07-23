@@ -1,3 +1,3 @@
 # Myweb
 This web site build by Kamin Jittapassorn 
-visit: [kaminjitt.com](https://kaminjitt.com)
+visit: [info.kaminjitt.com](https://info.kaminjitt.com)
